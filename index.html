@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImageProcessingTool</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">📸 ImageProcessingTool</div>
+    <p class="tagline">Transform, compress, and convert your images with powerful tools</p>
+    <div class="badges">
+      <span>⚡ Fast Processing</span>
+      <span>⬇ Free Download</span>
+      <span>📂 Multiple Formats</span>
+    </div>
+  </header>
+
+  <!-- Tool Tabs -->
+  <nav class="tabs">
+    <button class="tab active" onclick="setTool('pdf')">📑 Images to PDF</button>
+    <button class="tab" onclick="setTool('compress')">🗜 Compress Image</button>
+    <button class="tab" disabled>🖼 Image to JPG</button>
+    <button class="tab" disabled>🖼 Image to PNG</button>
+    <button class="tab" disabled>📄 Compress PDF</button>
+  </nav>
+
+  <!-- Tool Container -->
+  <main>
+    <section id="tool-section">
+      <h2 id="tool-title">Convert Images to PDF</h2>
+      <p>Upload multiple images and convert them into a single PDF document</p>
+
+      <!-- Upload Area -->
+      <div id="drop-area">
+        <p>📤 Drop images here or click to browse</p>
+        <input type="file" id="fileInput" accept="image/*" multiple hidden>
+        <button onclick="document.getElementById('fileInput').click()">+ Add Images</button>
+      </div>
+
+      <!-- Preview -->
+      <div id="preview"></div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button id="convertBtn">Convert to PDF</button>
+        <button id="compressBtn">Compress Images</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ImageProcessingTool. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
