@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f8fc;
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header .tagline {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.badges span {
+  background: rgba(255,255,255,0.2);
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tab {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #eaeaea;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.tab.active {
+  background: #2575fc;
+  color: white;
+}
+.tab:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Tool Section */
+#tool-section {
+  background: white;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+#drop-area {
+  border: 2px dashed #2575fc;
+  padding: 40px;
+  margin: 20px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #f9fbff;
+}
+#drop-area:hover {
+  background: #eef4ff;
+}
+
+#preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.preview-item {
+  position: relative;
+}
+.preview-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.remove-btn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.actions {
+  margin-top: 20px;
+}
+.actions button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#convertBtn {
+  background: #2575fc;
+  color: white;
+}
+#compressBtn {
+  background: #6a11cb;
+  color: white;
+}
+.actions button:hover {
+  opacity: 0.9;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f1f1f1;
+  font-size: 14px;
+}
